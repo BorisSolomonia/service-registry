@@ -1,0 +1,11 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: SERVICE-REGISTRY
+eureka:
+  instance:
+    hostname: "${HOSTNAME:localhost}.eureka" # Defines the hostname of this Eureka instance. If the environment variable HOSTNAME is not set, it defaults to 'localhost'. ".eureka" is appended to the hostname.
+  client:
+    register-with-eureka: false  # Tells this Eureka client not to register itself as a client with Eureka, which is typical for a Eureka server.
+    fetch-registry: false  # Indicates that this application should not fetch the registry of services from Eureka. This is common for a standalone Eureka server that does not need to discover other services.
