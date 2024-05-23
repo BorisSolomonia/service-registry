@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: service-registry
-        image: borissolomonia/dailycodebuffer:service-registry
+        image: IMAGE_URL/dailycodebuffer:service-registry
         ports:
         - containerPort: 8761
 

@@ -55,15 +55,21 @@
 			<plugin>
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>jib-maven-plugin</artifactId>
-
+				<version>3.4.2</version>
 				<configuration>
 					<from>
-						C:\Users\boris\D disc Boris\Projects\DailyCodeBuffer\service-registry\Dockerfile
+						<image>openjdk:17</image>
 					</from>
 					<to>
-						<image>registry.hub.docker.com/boris/service-registry</image>
-						<tag>${project.version}</tag>
+						<image>${REPO_URL}/order-service.git</image>
+						<tags>${project.version}</tags>
 					</to>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
 				</configuration>
 			</plugin>
 		</plugins>
