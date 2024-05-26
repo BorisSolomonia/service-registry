@@ -59,7 +59,7 @@
 						<image>openjdk:17</image>
 					</from>
 					<to>
-						<image>${REPO_URL}/order-service.git</image>
+						<image>${REPO_URL}/service-registry.git</image>
 						<tags>${project.version}</tags>
 					</to>
 					<excludes>
